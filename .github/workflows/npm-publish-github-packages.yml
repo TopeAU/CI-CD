@@ -21,7 +21,8 @@ jobs:
       with:
 	persist-credentials: false
         node-version: '16'
-	- name: Reconfigure git to use HTTP authentication
+	
+    - name: Reconfigure git to use HTTP authentication
       run: >
         git config --global url."https://github.com/".insteadOf
         ssh://git@github.com/
