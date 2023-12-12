@@ -19,9 +19,14 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
+	    persist-credentials: false
         node-version: '16'
- 
-    - name: Install dependencie
+	- name: Reconfigure git to use HTTP authentication
+      run: >
+        git config --global url."https://github.com/".insteadOf
+        ssh://git@github.com/
+
+    - name: Install dependencies
       run: npm install
 
     - name: Lint code
