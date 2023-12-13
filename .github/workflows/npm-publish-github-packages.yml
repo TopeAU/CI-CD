@@ -46,4 +46,5 @@ jobs:
       run: npm run test
 
     - name: Build
+      working-directory: /home/runner/work/CI-CD/CI-CD/codebase/rdicidr-0.1.0/
       run: npm run build
