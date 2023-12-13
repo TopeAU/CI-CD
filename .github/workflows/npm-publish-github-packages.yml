@@ -36,12 +36,15 @@ jobs:
       run: npm install
 
     - name: Lint code
+      working-directory: /home/runner/work/CI-CD/CI-CD/codebase/rdicidr-0.1.0/
       run: npm run lint
 
     - name: Run Prettier
+      working-directory: /home/runner/work/CI-CD/CI-CD/codebase/rdicidr-0.1.0/
       run: npm run prettier
 
     - name: Run tests
+      working-directory: /home/runner/work/CI-CD/CI-CD/codebase/rdicidr-0.1.0/
       env:
         CI: true
       run: npm run test
