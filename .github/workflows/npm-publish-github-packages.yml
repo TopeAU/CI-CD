@@ -32,7 +32,7 @@ jobs:
 
 
     - name: Install dependencies
-      working-directory: ./codebase
+      working-directory: /home/runner/work/CI-CD/codebase/package.json
       run: npm install
 
     - name: Lint code
