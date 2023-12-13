@@ -32,7 +32,7 @@ jobs:
 
 
     - name: Install dependencies
-      working-directory: /home/runner/work/CI-CD/Ci-CD/codebase/package.json
+      working-directory: /home/runner/work/CI-CD/Ci-CD/codebase/rdicidr-0.1.0/package.json
       run: npm install
 
     - name: Lint code
